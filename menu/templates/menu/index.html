@@ -1,0 +1,17 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First-Page Django</title>
+    <link rel="stylesheet" href="{% static 'menu/style.css' %}}">
+</head>
+<body>
+    <h1> Les Pizzas</h1>
+    <ul>
+        {% for pizza in pizzas %}
+            <li>{{pizza.nom}} : {{pizza.prix}} $</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
