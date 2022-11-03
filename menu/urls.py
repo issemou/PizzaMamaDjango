@@ -3,6 +3,8 @@ from . import views
 
 app_name = 'menu'
 
+
 urlpatterns = [
     path('', views.index, name="index"),
+    path('api/GetPizzas', views.api_get_pizzas),
 ]
